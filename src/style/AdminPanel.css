@@ -1,0 +1,168 @@
+/* Admin Panel CSS */
+.admin-panel {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fdfdfd;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.admin-panel h2 {
+  font-size: 2rem;
+  color: #1a1a1a;
+  transition: color 0.3s ease;
+  cursor: default;
+}
+
+.logout-btn {
+  background-color: #ff4d4f;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #d9363e;
+}
+
+.group-section {
+  margin-top: 2rem;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  transition: box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.group-section:hover {
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+.group-section h3 {
+  font-size: 1.6rem;
+  color: #1f1f1f;
+  margin-bottom: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+th, td {
+  padding: 12px 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+th {
+  background-color: #fafafa;
+  color: #111;
+}
+
+tr:nth-child(even) {
+  background-color: #fcfcfc;
+}
+
+tr:hover {
+  background-color: #eef5ff;
+}
+
+select {
+  padding: 6px 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+select:hover, select:focus {
+  border-color: #4096ff;
+  outline: none;
+}
+
+button {
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  padding: 9px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #156cd1;
+}
+
+@media screen and (max-width: 768px) {
+  .admin-panel {
+    padding: 0.5rem;
+  }
+
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  th, td {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  th {
+    background-color: transparent;
+    font-weight: bold;
+  }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+  }
+}
+
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.admin-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.back-btn {
+  padding: 10px 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-1px);
+}

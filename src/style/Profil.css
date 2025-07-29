@@ -1,0 +1,84 @@
+.profile-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  font-family: 'Segoe UI', sans-serif;
+  padding: 2rem;
+}
+
+.profile-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem 3rem;
+  max-width: 500px;
+  width: 100%;
+  text-align: left;
+}
+
+.profile-title {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.profile-info p {
+  font-size: 1.1rem;
+  margin: 0.8rem 0;
+  color: #444;
+}
+
+.profile-info p span {
+  font-weight: 600;
+  color: #000;
+}
+
+.profile-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Ümumi düymə stili */
+.profile-btn {
+  flex: 1 1 45%;
+  min-width: 120px;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+/* Çıxış düyməsi */
+.logout-btn {
+  background-color: #ff4d4f;
+}
+.logout-btn:hover {
+  background-color: #d9363e;
+  transform: scale(1.05);
+}
+
+/* Menyu düyməsi */
+.menu-btn {
+  background-color: #007bff;
+}
+.menu-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.loading-text {
+  font-style: italic;
+  color: #666;
+}
