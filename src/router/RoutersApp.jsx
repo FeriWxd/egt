@@ -6,7 +6,9 @@ import Menu from "../pages/Menu";
 import Homework from "../pages/Homework";
 import AdminLogin from "../admin/AdminLogin";
 import AdminPanel from "../admin/AdminPanel";
-import AdminDashboard from "../admin/AdminDashboard"; // ✅ Yeni səhifə
+import AdminDashboard from "../admin/AdminDashboard";
+import UploadQuestion from "../admin/UploadQuestion";
+import QuestionsList from "../admin/QuestionsList"; // ✅ Siyahı komponenti import edildi
 
 function RoutersApp() {
   return (
@@ -18,8 +20,10 @@ function RoutersApp() {
       <Route path="/homework" element={<Homework />} />
       <Route path="/profile" element={<Profile />} />
       <Route path="/admin" element={<AdminLogin />} />
-      <Route path="/admin-dashboard" element={<AdminDashboard />} /> {/* ✅ Əlavə edildi */}
+      <Route path="/admin-dashboard" element={<AdminDashboard />} />
       <Route path="/admin-panel" element={<AdminPanel />} />
+      <Route path="/upload-question" element={<UploadQuestion />} />
+      <Route path="/admin-list" element={<QuestionsList />} /> {/* ✅ Yeni route əlavə edildi */}
     </Routes>
   );
 }

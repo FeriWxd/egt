@@ -1,0 +1,105 @@
+/* Upload Question CSS */
+.upload-wrapper {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.upload-wrapper h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.upload-form label {
+  font-size: 1rem;
+  color: #444;
+  font-weight: bold;
+}
+
+.upload-form select,
+.upload-form input[type="text"],
+.upload-form input[type="number"],
+.upload-form input[type="file"] {
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.upload-form select:focus,
+.upload-form input[type="text"]:focus,
+.upload-form input[type="number"]:focus,
+.upload-form input[type="file"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.upload-form input[type="file"] {
+  padding: 0;
+}
+
+.upload-form button {
+  padding: 1rem 2rem;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-form button:hover {
+  background-color: #0056b3;
+}
+
+.upload-form .answer-upload {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.upload-form .answer-upload label {
+  width: 100%;
+}
+
+.upload-form .answer-upload input[type="file"] {
+  margin-top: 0.5rem;
+}
+
+.upload-form .numeric-answer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.upload-form .numeric-answer input {
+  width: 150px;
+}
+
+.upload-form .numeric-answer label {
+  font-weight: normal;
+}
+
+.upload-form .upload-button-container {
+  text-align: center;
+}
+
+.upload-form .upload-button-container button {
+  margin-top: 2rem;
+}
